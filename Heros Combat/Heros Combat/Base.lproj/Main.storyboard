@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Heros_Combat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="RIckandMorty Dev" translatesAutoresizingMaskIntoConstraints="NO" id="2hu-3r-7Tf">
+                                <rect key="frame" x="72" y="114" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="wsJ-0b-k7s"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IronMan Dev" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-cr-IiF">
+                                <rect key="frame" x="72" y="436" width="270" height="270"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V79-pb-ddk">
+                                <rect key="frame" x="191" y="388" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="c83-3r-HfD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" red="0.35294118520000001" green="0.61568629740000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCn-ci-wZF">
+                                <rect key="frame" x="123" y="747" width="168" height="57"/>
+                                <color key="backgroundColor" red="0.41568624970000001" green="0.60784316059999999" blue="0.78431367870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="XD5-Ya-lyv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                <state key="normal" title="NEXT BATTLE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nni-uY-rA1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who would win?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYW-Se-5c2">
+                                <rect key="frame" x="76" y="60" width="262" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="31"/>
+                                <color key="textColor" red="0.35294118520000001" green="0.61568629740000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="2hu-3r-7Tf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Wy-iy-AIl"/>
+                            <constraint firstItem="2hu-3r-7Tf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AXg-nd-G9n"/>
+                            <constraint firstItem="2ld-cr-IiF" firstAttribute="top" secondItem="V79-pb-ddk" secondAttribute="bottom" constant="40" id="BEa-ru-0Tj"/>
+                            <constraint firstItem="2hu-3r-7Tf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="Izu-zY-Zzc"/>
+                            <constraint firstItem="2ld-cr-IiF" firstAttribute="centerX" secondItem="mCn-ci-wZF" secondAttribute="centerX" id="KBm-H9-ZoM"/>
+                            <constraint firstItem="V79-pb-ddk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="LYy-aI-0c6"/>
+                            <constraint firstItem="V79-pb-ddk" firstAttribute="top" secondItem="2hu-3r-7Tf" secondAttribute="bottom" constant="32" id="NCL-Kq-bGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mCn-ci-wZF" secondAttribute="bottom" constant="47" id="TQu-uy-U4X"/>
+                            <constraint firstItem="mCn-ci-wZF" firstAttribute="top" secondItem="2ld-cr-IiF" secondAttribute="bottom" constant="50" id="VPb-4V-mgX"/>
+                            <constraint firstItem="2hu-3r-7Tf" firstAttribute="trailing" secondItem="2ld-cr-IiF" secondAttribute="trailing" id="Vwl-Ca-qZ4"/>
+                            <constraint firstItem="mCn-ci-wZF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="ZUf-UG-GYk"/>
+                            <constraint firstItem="2hu-3r-7Tf" firstAttribute="leading" secondItem="2ld-cr-IiF" secondAttribute="leading" id="hjD-kW-a6J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tcV-OE-2Db"/>
+                    <connections>
+                        <outlet property="fightButtonShape" destination="mCn-ci-wZF" id="bYQ-qZ-eXS"/>
+                        <outlet property="lowerView" destination="2ld-cr-IiF" id="fge-GQ-arv"/>
+                        <outlet property="upperView" destination="2hu-3r-7Tf" id="iII-zs-tcz"/>
+                        <outlet property="vsLabel" destination="V79-pb-ddk" id="ZOF-Et-dvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.08695652173924" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IronMan Dev" width="266.5" height="266.5"/>
+        <image name="RIckandMorty Dev" width="266.5" height="266.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
